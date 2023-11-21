@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item01"
+        android:title="Item 01" />
+    <item
+        android:id="@+id/SubMenu"
+        android:title="SubMenu">
+        <menu>
+            <item
+                android:id="@+id/SubItem01"
+                android:onClick="onMenuClick"
+                android:title="SubItem01" />
+            <item
+                android:id="@+id/SubItem02"
+                android:title="SubItem02" />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/radio01"
+            android:checked="true"
+            android:onClick="onMenuClick"
+            android:title="Item" />
+        <item
+            android:id="@+id/radio02"
+            android:onClick="onMenuClick"
+            android:title="Item" />
+    </group>
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/check01"
+            android:onClick="onCheckClick"
+            android:title="Item" />
+        <item
+            android:id="@+id/check02"
+            android:onClick="onCheckClick"
+            android:title="Item" />
+    </group>
+</menu>
